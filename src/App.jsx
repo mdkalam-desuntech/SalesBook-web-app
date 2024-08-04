@@ -6,7 +6,7 @@ export default function App() {
   return (
     <>
       <Header />
-      <div className="flex h-screen bg-gray-100">
+      <div className="flex  bg-gray-100">
         <div className="flex flex-col w-56 bg-white border-r border-gray-300">
           <Sidebar />
         </div>

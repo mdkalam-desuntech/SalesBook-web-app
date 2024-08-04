@@ -1,6 +1,7 @@
 import React from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoLogoPlaystation } from "react-icons/io";
+import Button from "./layout/Button";
 
 const Header = () => {
   return (
@@ -18,13 +19,13 @@ const Header = () => {
       </div>
 
       <div className="flex justify-center w-full sm:w-auto mb-2 sm:mb-0">
-        <button
-          type="button"
-          className="relative bg-transparent border border-blue-700 rounded-md shadow-lg shadow-blue-500/50 hover:bg-blue-700 hover:text-white focus:ring-4 focus:ring-blue-300 font-medium text-sm px-5 py-1.5 text-center dark:shadow-lg dark:shadow-blue-800/80"
+        <Button
+          type="submit"
+          className="relative bg-transparent border border-gray-500 rounded focus:ring-4 focus:ring-blue-300 font-sm text-sm px-2 py-1 text-center text-gray-500	text-xs	 dark:shadow-sm dark:shadow-blue-800/80"
         >
           Live Call Dashboard
           <span className="absolute top-[-2px] right-[-2px] h-2 w-2 rounded-full bg-green-500"></span>
-        </button>
+        </Button>
       </div>
 
       <div className="flex items-center w-full sm:w-auto">
@@ -32,12 +33,12 @@ const Header = () => {
           <h4 className="text-sm font-medium">Arghya Dutta</h4>
           <h4 className="text-xs font-medium text-slate-400">94287867867</h4>
         </div>
-        <button
-          type="button"
-          className="relative bg-transparent border border-gray-500 rounded focus:ring-4 focus:ring-blue-300 font-medium text-sm px-2 py-1 text-center dark:shadow-lg dark:shadow-blue-800/80"
+        <Button
+          type="submit"
+          className="relative bg-transparent border border-gray-500 rounded focus:ring-4 focus:ring-blue-300 font-sm text-sm px-2 py-1 text-center text-gray-500	text-xs	 dark:shadow-sm dark:shadow-blue-800/80"
         >
           Logout
-        </button>
+        </Button>
       </div>
     </div>
   );
