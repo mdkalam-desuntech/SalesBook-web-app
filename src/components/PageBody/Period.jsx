@@ -46,11 +46,11 @@ const Period = () => {
       </div>
       <div className="bg-white mt-11 border flex-1  p-2">
         {/* Tags Distribution Chart */}
-        <ChartWithLabels
+        {/* <ChartWithLabels
           title="TAGS DISTRIBUTION"
           data={data}
           colors={colors}
-        />
+        /> */}
       </div>
     </div>
   );

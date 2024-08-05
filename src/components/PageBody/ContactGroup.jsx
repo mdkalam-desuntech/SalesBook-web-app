@@ -41,11 +41,11 @@ const ContactGroup = () => {
       </div>
       <div className="bg-white mt-12 border  flex-1">
         {/* Lead Distribution Chart */}
-        <ChartWithLabels
+        {/* <ChartWithLabels
           title="LEAD DISTRIBUTION"
           data={data}
           colors={colors}
-        />
+        /> */}
       </div>
     </div>
   );

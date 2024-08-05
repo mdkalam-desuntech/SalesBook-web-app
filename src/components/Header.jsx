@@ -3,16 +3,16 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { IoLogoPlaystation } from "react-icons/io";
 import Button from "./layout/Button";
 
-const Header = () => {
+const Header = ({setIsShow}) => {
   return (
     <div className="flex justify-between items-center border-b border-gray-300 py-3 px-4 flex-wrap">
       <div className="flex justify-between items-center w-full sm:w-auto mb-2 sm:mb-0">
-        <div className="flex items-center">
+        <div className="flex items-center" >
           <IoLogoPlaystation className="mx-2" />
           <h1 className="text-xl font-bold">Superfone</h1>
         </div>
         <div className="flex items-center ml-8">
-          <GiHamburgerMenu className="cursor-pointer mr-4" />
+          <GiHamburgerMenu className="cursor-pointer mr-4" onClick={()=>setIsShow((prevState)=>!prevState)}/>
           <h4 className="text-xs font-medium">Desun Academy</h4>
           <h4 className="text-xs font-medium ml-2">+91 94287867867</h4>
         </div>
@@ -29,9 +29,9 @@ const Header = () => {
       </div>
 
       <div className="flex items-center w-full sm:w-auto">
-        <div className="mx-4 text-center sm:text-left">
+        <div className="mx-4 text-center sm:text-left ">
           <h4 className="text-sm font-medium">Arghya Dutta</h4>
-          <h4 className="text-xs font-medium text-slate-400">94287867867</h4>
+          <h4 className="text-xs font-natural mt-[1px] text-end text-gray-500">94287867867</h4>
         </div>
         <Button
           type="submit"

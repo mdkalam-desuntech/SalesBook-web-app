@@ -11,127 +11,60 @@ import { TbReportSearch } from "react-icons/tb";
 import { CiSettings } from "react-icons/ci";
 import Button from "./layout/Button";
 
-const Sidebar = () => {
+const sidebarItems = [
+  { name: "Home", icon: <RxHome size={24} />, href: "#" },
+  { name: "Teams", icon: <TbBrandTeams size={24} />, href: "#" },
+  { name: "Team members", icon: <MdOutlinePeopleAlt size={24} />, href: "#" },
+  { name: "Contacts", icon: <AiOutlineContacts size={24} />, href: "#" },
+  { name: "To Dos", icon: <SlNote size={24} />, href: "#" },
+  { name: "Call History", icon: <IoCallOutline size={24} />, href: "#" },
+  { name: "Notes", icon: <MdOutlineNotes size={24} />, href: "#" },
+  { name: "Whatsapp", icon: <FaWhatsapp size={24} />, href: "#" },
+  { name: "Reports", icon: <TbReportSearch size={24} />, href: "#" },
+  { name: "Settings", icon: <CiSettings size={24} />, href: "#" },
+];
+
+const Sidebar = ({ isShow }) => {
   return (
-    <div className="flex flex-col space-y-8 justify-between	mx-2	">
+    <div className="flex flex-col space-y-8 justify-between mx-2">
       <nav className="flex-1 p-4 space-y-2">
-        <li className="flex items-center">
-          <RxHome />
-          <a
-            href="#"
-            className="block p-2 text-gray-700 rounded hover:bg-gray-200"
-          >
-            Home
-          </a>
-        </li>
-        <li className="flex items-center">
-          <TbBrandTeams />
-          <a
-            href="#"
-            className="block p-2 text-gray-700 rounded hover:bg-gray-200"
-          >
-            Teams
-          </a>
-        </li>
-        <li className="flex items-center">
-          <MdOutlinePeopleAlt />
-          <a
-            href="#"
-            className="block p-2 text-gray-700 rounded hover:bg-gray-200"
-          >
-            Team members
-          </a>
-        </li>
-
-        <li className="flex items-center">
-          <AiOutlineContacts />
-          <a
-            href="#"
-            className="block p-2 text-gray-700 rounded hover:bg-gray-200"
-          >
-            Contacts
-          </a>
-        </li>
-        <li className="flex items-center">
-          <SlNote />
-          <a
-            href="#"
-            className="block p-2 text-gray-700 rounded hover:bg-gray-200"
-          >
-            To Dos
-          </a>
-        </li>
-        <li className="flex items-center">
-          <IoCallOutline />
-          <a
-            href="#"
-            className="block p-2 text-gray-700 rounded hover:bg-gray-200"
-          >
-            Call History
-          </a>
-        </li>
-
-        <li className="flex items-center">
-          <MdOutlineNotes />
-          <a
-            href="#"
-            className="block p-2 text-gray-700 rounded hover:bg-gray-200"
-          >
-            Notes
-          </a>
-        </li>
-
-        <li className="flex items-center">
-          <FaWhatsapp />
-          <a
-            href="#"
-            className="block p-2 text-gray-700 rounded hover:bg-gray-200"
-          >
-            Whatsapp
-          </a>
-        </li>
-        <li className="flex items-center">
-          <TbReportSearch />
-          <a
-            href="#"
-            className="block p-2 text-gray-700 rounded hover:bg-gray-200"
-          >
-            Reports
-          </a>
-        </li>
-        <li className="flex items-center">
-          <CiSettings />
-          <a
-            href="#"
-            className="block p-2 text-gray-700 rounded hover:bg-gray-200"
-          >
-            Settings
-          </a>
-        </li>
+        {sidebarItems.map((item, index) => (
+          <li key={index} className="flex items-center p-2">
+            {item.icon}
+            {isShow && (
+              <a
+                href={item.href}
+                className="block p-2 text-gray-700 rounded hover:bg-gray-200"
+              >
+                {item.name}
+              </a>
+            )}
+          </li>
+        ))}
       </nav>
 
-      <div className="w-full ">
+      <div className="w-full">
         <Button
           type="submit"
-          className="w-full relative bg-blue-700 border border-gray-500 rounded focus:ring-4 focus:ring-blue-300 font-sm text-sm px-2 py-1.5 text-center text-white	text-xs	 dark:shadow-sm dark:shadow-blue-800/80"
+          className="w-full relative bg-blue-700 border border-gray-500 rounded focus:ring-4 focus:ring-blue-300 font-sm text-sm px-2 py-1.5 text-center text-white text-xs dark:shadow-sm dark:shadow-blue-800/80"
         >
-          Watch tutorial
+          <span className="block truncate">Watch tutorial</span>
         </Button>
         <Button
           type="submit"
-          className="w-full my-2 relative bg-blue-700 border border-gray-500 rounded focus:ring-4 focus:ring-blue-300 font-sm text-sm px-2 py-1.5 text-center text-white	text-xs	 dark:shadow-sm dark:shadow-blue-800/80"
+          className="w-full my-2 relative bg-blue-700 border border-gray-500 rounded focus:ring-4 focus:ring-blue-300 font-sm text-sm px-2 py-1.5 text-center text-white text-xs dark:shadow-sm dark:shadow-blue-800/80"
         >
-          Contact Us to Buy a New Num
-        </Button>
-
-        <Button
-          type="submit"
-          className="w-full mb-2 relative bg-transprant border border-gray-500 rounded focus:ring-4 focus:ring-blue-300 font-sm text-sm px-2 py-1.5 text-center text-black	text-xs	 dark:shadow-sm dark:shadow-blue-800/80"
-        >
-          Contact Us
+          <span className="block truncate">Contact Us to Buy a New Num</span>
         </Button>
 
-        <p className="text-blue-800	text-center font-medium	 mb-2 text-sm underline">
+        <Button
+          type="submit"
+          className="w-full mb-2 relative bg-transprant border border-gray-500 rounded focus:ring-4 focus:ring-blue-300 font-sm text-sm px-2 py-1.5 text-center text-black text-xs dark:shadow-sm dark:shadow-blue-800/80"
+        >
+          <span className="block truncate">Contact Us</span>
+        </Button>
+
+        <p className="text-blue-800 text-center font-medium mb-2 text-sm underline block truncate">
           chat with live agent
         </p>
       </div>
