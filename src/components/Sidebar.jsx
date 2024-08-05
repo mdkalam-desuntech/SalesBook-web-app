@@ -121,14 +121,14 @@ const Sidebar = () => {
           type="submit"
           className="w-full my-2 relative bg-blue-700 border border-gray-500 rounded focus:ring-4 focus:ring-blue-300 font-sm text-sm px-2 py-1.5 text-center text-white	text-xs	 dark:shadow-sm dark:shadow-blue-800/80"
         >
-          Watch tutorial
+          Contact Us to Buy a New Num
         </Button>
 
         <Button
           type="submit"
           className="w-full mb-2 relative bg-transprant border border-gray-500 rounded focus:ring-4 focus:ring-blue-300 font-sm text-sm px-2 py-1.5 text-center text-black	text-xs	 dark:shadow-sm dark:shadow-blue-800/80"
         >
-          Watch tutorial
+          Contact Us
         </Button>
 
         <p className="text-blue-800	text-center font-medium	 mb-2 text-sm underline">
