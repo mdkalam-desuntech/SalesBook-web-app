@@ -21,10 +21,10 @@ const Header = () => {
       <div className="flex justify-center w-full sm:w-auto mb-2 sm:mb-0">
         <Button
           type="submit"
-          className="relative bg-transparent border border-gray-500 rounded focus:ring-4 focus:ring-blue-300 font-sm text-sm px-2 py-1 text-center text-gray-500	text-xs	 dark:shadow-sm dark:shadow-blue-800/80"
+          className="relative bg-transparent border border-blue-900 rounded focus:ring-4 focus:ring-blue-300 font-sm text-sm px-2 py-1 text-center text-gray-500	text-xs	 dark:shadow-sm dark:shadow-blue-800/80"
         >
           Live Call Dashboard
-          <span className="absolute top-[-2px] right-[-2px] h-2 w-2 rounded-full bg-green-500"></span>
+          <span className="absolute top-[-2px] right-[-2px] h-1.5 w-1.5 rounded-full bg-green-500"></span>
         </Button>
       </div>
 
