@@ -44,7 +44,7 @@ const MultiDateSelect = () => {
 const CustomInput = React.forwardRef(({ value, onClick }, ref) => (
   <button
     type="button"
-    className="bg-transparent border-none p-0 text-left text-gray-700"
+    className="bg-transparent border-none p-0 text-left text-gray-800 text-sm"
     onClick={onClick}
     ref={ref}
   >

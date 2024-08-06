@@ -12,7 +12,7 @@ export default function App() {
       <div className="flex min-h-full">
         <div
           className={`flex min-h-full flex-col ${
-            isShow ? "w-56" : "w-24"
+            isShow ? "w-52" : "w-24"
           } bg-white border-r border-gray-300`}
         >
           <Sidebar isShow={isShow} />

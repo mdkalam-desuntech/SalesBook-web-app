@@ -37,7 +37,7 @@ const Staff = () => {
           </p>
         </div>
         <div className="bg-white  border flex-1  p-2">
-          <FunnelChart title="SALES FUNNEL"/>
+          <FunnelChart title="SALES FUNNEL" />
         </div>
       </div>
     </div>
