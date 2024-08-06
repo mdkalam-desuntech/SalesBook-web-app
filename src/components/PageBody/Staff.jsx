@@ -3,15 +3,15 @@ import FunnelChart from "./FunnelChart";
 import MultiSelectDropDown from "../layout/MultiSelectDropDown";
 
 const Staff = () => {
+  const [totalContacts] = useState(1918);
+  const [selectedOptions, setSelectedOptions] = useState([]);
+
   const options = [
     { id: 1, name: "Arghya Dutta" },
     { id: 2, name: "Option 2" },
     { id: 3, name: "Option 3" },
     { id: 4, name: "Option 4" },
   ];
-
-  const [totalContacts] = useState(1918);
-  const [selectedOptions, setSelectedOptions] = useState([]);
 
   const handleSelect = (option) => {
     if (selectedOptions.includes(option)) {
