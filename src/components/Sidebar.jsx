@@ -10,18 +10,19 @@ import { FaWhatsapp } from "react-icons/fa";
 import { TbReportSearch } from "react-icons/tb";
 import { CiSettings } from "react-icons/ci";
 import Button from "./layout/Button";
+import { BsYoutube } from "react-icons/bs";
 
 const sidebarItems = [
-  { name: "Home", icon: <RxHome size={24} />, href: "#" },
-  { name: "Teams", icon: <TbBrandTeams size={24} />, href: "#" },
-  { name: "Team members", icon: <MdOutlinePeopleAlt size={24} />, href: "#" },
-  { name: "Contacts", icon: <AiOutlineContacts size={24} />, href: "#" },
-  { name: "To Dos", icon: <SlNote size={24} />, href: "#" },
-  { name: "Call History", icon: <IoCallOutline size={24} />, href: "#" },
-  { name: "Notes", icon: <MdOutlineNotes size={24} />, href: "#" },
-  { name: "Whatsapp", icon: <FaWhatsapp size={24} />, href: "#" },
-  { name: "Reports", icon: <TbReportSearch size={24} />, href: "#" },
-  { name: "Settings", icon: <CiSettings size={24} />, href: "#" },
+  { name: "Home", icon: <RxHome size={22} />, href: "#" },
+  { name: "Teams", icon: <TbBrandTeams size={22} />, href: "#" },
+  { name: "Team members", icon: <MdOutlinePeopleAlt size={22} />, href: "#" },
+  { name: "Contacts", icon: <AiOutlineContacts size={22} />, href: "#" },
+  { name: "To Dos", icon: <SlNote size={22} />, href: "#" },
+  { name: "Call History", icon: <IoCallOutline size={22} />, href: "#" },
+  { name: "Notes", icon: <MdOutlineNotes size={22} />, href: "#" },
+  { name: "Whatsapp", icon: <FaWhatsapp size={22} />, href: "#" },
+  { name: "Reports", icon: <TbReportSearch size={22} />, href: "#" },
+  { name: "Settings", icon: <CiSettings size={22} />, href: "#" },
 ];
 
 const Sidebar = ({ isShow }) => {
@@ -46,8 +47,9 @@ const Sidebar = ({ isShow }) => {
       <div className="w-full">
         <Button
           type="submit"
-          className="w-full relative bg-blue-700 border border-gray-500 rounded focus:ring-4 focus:ring-blue-300 font-sm text-sm px-2 py-1.5 text-center text-white text-xs dark:shadow-sm dark:shadow-blue-800/80"
+          className="w-full flex items-center relative bg-blue-700 border border-gray-500 rounded focus:ring-4 focus:ring-blue-300 font-sm text-sm px-2 py-1.5 text-center text-white text-xs dark:shadow-sm dark:shadow-blue-800/80"
         >
+          <BsYoutube size={isShow ? 14 : 20} className="mx-1" />
           <span className="block truncate">Watch tutorial</span>
         </Button>
         <Button
@@ -59,8 +61,9 @@ const Sidebar = ({ isShow }) => {
 
         <Button
           type="submit"
-          className="w-full mb-2 relative bg-transprant border border-gray-500 rounded focus:ring-4 focus:ring-blue-300 font-sm text-sm px-2 py-1.5 text-center text-black text-xs dark:shadow-sm dark:shadow-blue-800/80"
+          className="w-full flex items-center justify-center mb-2 relative bg-transprant border border-gray-500 rounded focus:ring-4 focus:ring-blue-300 font-sm text-sm px-2 py-1.5 text-center text-black text-xs dark:shadow-sm dark:shadow-blue-800/80"
         >
+          <IoCallOutline size={isShow ? 12 : 16} className="mx-1" />
           <span className="block truncate">Contact Us</span>
         </Button>
 

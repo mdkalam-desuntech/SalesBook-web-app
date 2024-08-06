@@ -3,7 +3,7 @@ import { BarChart } from "@mui/x-charts/BarChart";
 
 const chartSetting = {
   width: 340,
-  height: 400,
+  height: 320,
   margin: { top: 20, right: 30, bottom: 40, left: 100 },
 };
 

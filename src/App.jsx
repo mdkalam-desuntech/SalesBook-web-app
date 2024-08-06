@@ -5,13 +5,13 @@ import ReportScreen from "./components/PageBody/ReportScreen";
 import Sidebar from "./components/Sidebar";
 
 export default function App() {
-  const [isShow, setIsShow] = useState(false);
+  const [isShow, setIsShow] = useState(true);
   return (
     <>
       <Header setIsShow={setIsShow} />
-      <div className="flex">
+      <div className="flex min-h-full">
         <div
-          className={`flex flex-col ${
+          className={`flex min-h-full flex-col ${
             isShow ? "w-56" : "w-24"
           } bg-white border-r border-gray-300`}
         >

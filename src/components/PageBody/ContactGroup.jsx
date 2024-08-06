@@ -52,6 +52,7 @@ const ContactGroup = () => {
           title="LEAD DISTRIBUTION"
           data={data}
           colors={colors}
+          className="mt-32"
         />
       </div>
     </div>

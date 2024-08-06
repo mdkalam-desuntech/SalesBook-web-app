@@ -1,12 +1,10 @@
 import React from "react";
 import { PieChart } from "@mui/x-charts/PieChart";
 
-const ChartWithLabels = ({ title, data, colors }) => {
+const ChartWithLabels = ({ title, data, colors, className = "" }) => {
   return (
     <div className="w-full ">
-      <h2 className="block text-black text-center text-sm font-bold mb-2">
-        {title}
-      </h2>
+      <h2 className="text-center text-black font-medium mb-4">{title}</h2>
       <div className="flex justify-center pl-12 inline-block  mt-[-40px]">
         <PieChart
           width={350}
@@ -22,17 +20,14 @@ const ChartWithLabels = ({ title, data, colors }) => {
           ]}
         />
       </div>
-      <div className="mt-4">
+      <div className={`${className} mt-4`}>
         {data.map((item, index) => (
           <div
             key={item.id}
             className="flex justify-between text-sm text-gray-700 mb-1"
           >
             <span className="flex items-center">
-              <span
-                className="w-4 h-4 rounded-full mr-2"
-                style={{ backgroundColor: colors[index] }}
-              ></span>
+              <span className="mr-2">{index + 1}</span>
               {item.id}
             </span>
             <span>{item.value}</span>

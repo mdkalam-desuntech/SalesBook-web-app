@@ -36,7 +36,7 @@ const Staff = () => {
             {totalContacts} contacts selected
           </p>
         </div>
-        <div className="bg-white  border border flex-1 h-full p-2">
+        <div className="bg-white  border flex-1  p-2">
           <FunnelChart title="SALES FUNNEL"/>
         </div>
       </div>
