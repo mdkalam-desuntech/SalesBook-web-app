@@ -3,11 +3,11 @@ import { PieChart } from "@mui/x-charts/PieChart";
 
 const ChartWithLabels = ({ title, data, colors }) => {
   return (
-    <div className="bg-white flex-1  p-2">
+    <div className="w-full ">
       <h2 className="block text-black text-center text-sm font-bold mb-2">
         {title}
       </h2>
-      <div className="flex justify-center pl-10 inline-block">
+      <div className="flex justify-center pl-12 inline-block  mt-[-40px]">
         <PieChart
           width={350}
           height={350}

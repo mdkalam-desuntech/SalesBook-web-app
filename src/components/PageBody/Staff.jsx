@@ -36,12 +36,8 @@ const Staff = () => {
             {totalContacts} contacts selected
           </p>
         </div>
-        <div className="bg-white mt-5 border border flex-1 h-full p-2">
-          <h2 className="text-center text-black font-medium mb-4">
-            SALES FUNNEL
-          </h2>
-          {/* Sales Funnel Chart */}
-          {/* <FunnelChart /> */}
+        <div className="bg-white  border border flex-1 h-full p-2">
+          <FunnelChart title="SALES FUNNEL"/>
         </div>
       </div>
     </div>

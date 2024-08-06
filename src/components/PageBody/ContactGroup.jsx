@@ -46,13 +46,13 @@ const ContactGroup = () => {
           handleSelect={handleSelect}
         />
       </div>
-      <div className="bg-white mt-12 border  flex-1">
+      <div className="bg-white mt-10 border  flex-1  p-2">
         {/* Lead Distribution Chart */}
-        {/* <ChartWithLabels
+        <ChartWithLabels
           title="LEAD DISTRIBUTION"
           data={data}
           colors={colors}
-        /> */}
+        />
       </div>
     </div>
   );

@@ -21,9 +21,10 @@ const dataset = [
 
 const valueFormatter = (value) => `${value}mm`;
 
-export default function FunnelChart() {
+export default function FunnelChart({ title }) {
   return (
     <div className="w-full">
+      <h2 className="text-center text-black font-medium mb-4">{title}</h2>
       <div>
         <BarChart
           dataset={dataset}

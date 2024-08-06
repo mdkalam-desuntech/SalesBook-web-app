@@ -9,7 +9,7 @@ export default function App() {
   return (
     <>
       <Header setIsShow={setIsShow} />
-      <div className="flex ">
+      <div className="flex">
         <div
           className={`flex flex-col ${
             isShow ? "w-56" : "w-24"
