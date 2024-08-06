@@ -2,13 +2,9 @@ import * as React from "react";
 import { BarChart } from "@mui/x-charts/BarChart";
 
 const chartSetting = {
-  xAxis: [
-    {
-      label: "",
-    },
-  ],
-  width: 350,
+  width: 340,
   height: 400,
+  margin: { top: 20, right: 30, bottom: 40, left: 100 },
 };
 
 const dataset = [
@@ -28,14 +24,14 @@ const valueFormatter = (value) => `${value}mm`;
 export default function FunnelChart() {
   return (
     <div className="w-full">
-      <div className="">
+      <div>
         <BarChart
           dataset={dataset}
           yAxis={[{ scaleType: "band", dataKey: "leadValueType" }]}
           series={[
             {
               dataKey: "leadId",
-              label: "",
+              // label: "Lead ID",
               valueFormatter,
               color: "#2196F3",
             },
@@ -53,11 +49,12 @@ export default function FunnelChart() {
             className="flex justify-between text-sm text-gray-700 mb-1"
           >
             <span>
-              {" "}
-              <span className=" mr-2">{index + 1}</span>
+              <span className="mr-2">{index + 1}</span>
               {item.leadValueType}
             </span>
-            <span className="flex items-center">{item.leadId}</span>
+            <span className="flex items-center text-blue-700 underline">
+              {item.leadId}
+            </span>
           </div>
         ))}
       </div>
