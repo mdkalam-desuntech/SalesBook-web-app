@@ -34,7 +34,7 @@ export default function FunnelChart({ title }) {
               dataKey: "leadId",
               // label: "Lead ID",
               valueFormatter,
-              color: "#2196F3",
+              color: "rgba(0, 188, 212, 0.5)",
             },
           ]}
           layout="horizontal"

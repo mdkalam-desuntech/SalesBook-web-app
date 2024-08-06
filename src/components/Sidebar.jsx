@@ -47,7 +47,7 @@ const Sidebar = ({ isShow }) => {
       <div className="w-full">
         <Button
           type="submit"
-          className="w-full flex items-center relative bg-blue-700 border border-gray-500 rounded focus:ring-4 focus:ring-blue-300 font-sm text-sm px-2 py-1.5 text-center text-white text-xs dark:shadow-sm dark:shadow-blue-800/80"
+          className="w-full flex items-center justify-center relative bg-blue-700 border border-gray-500 rounded focus:ring-4 focus:ring-blue-300 font-sm text-sm px-2 py-1.5 text-center text-white text-xs dark:shadow-sm dark:shadow-blue-800/80"
         >
           <BsYoutube size={isShow ? 14 : 20} className="mx-1" />
           <span className="block truncate">Watch tutorial</span>

@@ -4,20 +4,20 @@ import MultiSelectDropDown from "../layout/MultiSelectDropDown";
 const ContactGroup = () => {
   const [selectedOptions, setSelectedOptions] = useState([]);
   const data = [
-    { id: "Open", value: 300 },
-    { id: "Contacted", value: 200 },
-    { id: "Interested", value: 150 },
-    { id: "Had Interviewed", value: 100 },
-    { id: "Followed Up", value: 50 },
-    { id: "Sale Done", value: 10 },
+    { id: "Open", value: 100 },
+    { id: "Contacted", value: 80 },
+    { id: "Interested", value: 50 },
+    { id: "Had Interviewed", value: 20 },
+    { id: "Followed Up", value: 5 },
+    { id: "Sale Done", value: 2 },
   ];
   const colors = [
+    "#FF6384",
     "#FF5733",
-    "#33FF57",
-    "#3357FF",
-    "#FF33A8",
-    "#57FF33",
     "#FFA833",
+    "#4BC0C0",
+    "#FF33A8",
+    "#36A2EB",
   ];
 
   const options = [

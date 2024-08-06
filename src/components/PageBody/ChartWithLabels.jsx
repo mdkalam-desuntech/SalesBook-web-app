@@ -30,7 +30,7 @@ const ChartWithLabels = ({ title, data, colors, className = "" }) => {
               <span className="mr-2">{index + 1}</span>
               {item.id}
             </span>
-            <span>{item.value}</span>
+            <span className="flex items-center text-blue-700 underline">{item.value}</span>
           </div>
         ))}
       </div>

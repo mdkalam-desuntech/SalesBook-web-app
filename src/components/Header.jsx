@@ -8,7 +8,7 @@ const Header = ({ setIsShow }) => {
     <div className="flex justify-between items-center border-b border-gray-300 py-3 px-4 flex-wrap">
       <div className="flex justify-between items-center w-full sm:w-auto mb-2 sm:mb-0">
         <div className="flex items-center">
-          <IoLogoPlaystation className="mx-2" />
+          <IoLogoPlaystation className="mx-2" color="blue" />
           <h1 className="text-xl font-bold">Superfone</h1>
         </div>
         <div className="flex items-center ml-16">

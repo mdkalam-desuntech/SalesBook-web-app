@@ -19,11 +19,11 @@ function MultiSelectDropDown({
                   <span className=" w-24  ">
                     {selectedOptions.length > 0 ? (
                       <>
-                        <span className=" mr-4 bg-gray-200 py-1.5 text-sm px-3 rounded	">
+                        <span className=" mr-4 bg-gray-100 py-1.5 text-sm px-3 rounded	">
                           {selectedOptions[0].name}
                         </span>
                         {selectedOptions.length > 1 && (
-                          <span className=" mr-4 bg-gray-200 py-1.5 text-sm px-3 rounded">
+                          <span className=" mr-4 bg-gray-100 py-1.5 text-sm px-3 rounded">
                             + {selectedOptions.length}
                             {" ..."}
                           </span>

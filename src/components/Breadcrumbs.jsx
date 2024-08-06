@@ -9,7 +9,7 @@ const Breadcrumbs = () => {
 
   return (
     <nav
-      className="flex border-b-[1px] border-gray-400 "
+      className="flex border-b-[1px] border-gray-300 "
       aria-label="Breadcrumb"
     >
       <ol className="inline-flex items-center space-x-1 md:space-x-3">
