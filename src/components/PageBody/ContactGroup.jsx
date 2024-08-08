@@ -46,7 +46,7 @@ const ContactGroup = () => {
           handleSelect={handleSelect}
         />
       </div>
-      <div className="bg-white mt-10 border  flex-1  p-2">
+      <div className="bg-white mt-11 border  flex-1  p-2 m-1">
         {/* Lead Distribution Chart */}
         <ChartWithLabels
           title="LEAD DISTRIBUTION"

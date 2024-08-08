@@ -32,11 +32,14 @@ const Staff = () => {
             selectedOptions={selectedOptions}
             handleSelect={handleSelect}
           />
-          <p className="my-2 text-black text-md font-medium">
+          <p className="my-2 text-gray-900 text-md font-medium">
             {totalContacts} contacts selected
           </p>
         </div>
-        <div className="bg-white  border flex-1  p-2">
+        <div className="bg-white  border flex-1  p-2 m-1">
+          <h2 className="text-center text-black font-medium mb-4">
+            SALES FUNNEL
+          </h2>
           <FunnelChart title="SALES FUNNEL" />
         </div>
       </div>

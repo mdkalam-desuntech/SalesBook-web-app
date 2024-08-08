@@ -20,7 +20,7 @@ const ChartWithLabels = ({ title, data, colors, className = "" }) => {
           ]}
         />
       </div>
-      <div className={`${className} mt-4`}>
+      <div className={`${className} `}>
         {data.map((item, index) => (
           <div
             key={item.id}

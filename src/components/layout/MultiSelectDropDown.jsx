@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Listbox } from "@headlessui/react";
 import { FaAngleDown } from "react-icons/fa6";
 import { FaCheck } from "react-icons/fa6";
+import { IoCloseOutline } from "react-icons/io5";
 
 function MultiSelectDropDown({
   options = [],
@@ -20,7 +21,7 @@ function MultiSelectDropDown({
                     {selectedOptions.length > 0 ? (
                       <>
                         <span className=" mr-4 bg-gray-100 py-1.5 text-sm px-3 rounded	">
-                          {selectedOptions[0].name}
+                          {selectedOptions[0].name} 
                         </span>
                         {selectedOptions.length > 1 && (
                           <span className=" mr-4 bg-gray-100 py-1.5 text-sm px-3 rounded">

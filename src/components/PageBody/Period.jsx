@@ -46,12 +46,13 @@ const Period = () => {
         </div> */}
         <MultiDateSelect/>
       </div>
-      <div className="bg-white mt-10 border flex-1  p-2">
+      <div className="bg-white mt-11 border flex-1  p-2 m-1">
         {/* Tags Distribution Chart */}
         <ChartWithLabels
           title="TAGS DISTRIBUTION"
           data={data}
           colors={colors}
+          className="mt-2"
         />
       </div>
     </div>
